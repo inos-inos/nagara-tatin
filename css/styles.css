@@ -1,0 +1,645 @@
+body {
+  font-family: メイリオ, Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",'M PLUS 1p', Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Helvetica, sans-serif;
+  color: #333;
+  line-height: 1.8rem;
+  letter-spacing: 1px;
+}
+
+p {
+  line-height: 1.6;
+  font-family: "Hiragino Kaku Gothic Pro";
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.pagetop {
+  position: fixed;
+  bottom: 24px;
+  right:16px;
+  border: 2px solid #fff;
+  background-color: #d62418;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+}
+
+.pagetop a {
+  display: block;
+  position: relative;
+  z-index: 50;
+}
+
+.pagetop a::after {
+  position: absolute;
+  content: '';
+  top: 20px;
+  left: 20px;
+  width: 8px;
+  height: 8px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(-45deg);
+}
+
+
+.pagetop:hover {
+  opacity: 0.8;
+}
+
+.sp {
+  display: none;
+}
+
+/* header */
+header {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 12px;
+  font-weight: normal;
+  height: 40px;
+  line-height: 40px;;
+}
+
+header ul {
+  display: flex;
+  height: 70px;
+  line-height: 70px;;
+}
+
+header li {
+  padding: 0 20px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 14px;
+}
+
+.header-logo-pc {
+  width: 160px;
+  position: relative;
+  Z-index: 100;
+}
+
+.header-logo-pc:hover {
+  opacity: 0.8;
+}
+
+.header-logo-sp {
+  display: none;
+}
+
+.hamburger-icon {
+  display: none;
+}
+
+/* main */
+.main-img {
+  width: 100%;
+}
+
+.main-img-wrapper {
+  position: relative;
+  z-index: 30;
+}
+
+.control-btn button{
+  height: 16px;
+  width: 16px;
+  border: 1px solid #bba78e;
+  background-color: #bba78e;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -35px;
+  margin: auto;
+  right: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.control.red {
+  border: 1px solid #d62418;
+  background-color: #d62418;
+}
+
+.control1{
+  left: -70px;
+}
+
+.control2 {
+  left: 0;
+}
+
+.control3 {
+  left: 70px;
+}
+
+.concept {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 100px;
+  background-color: #ebe2cf;
+}
+
+.concept-img {
+  width: 480px;
+  position: relative;
+  left: -140px;
+}
+
+.concept-text {
+  padding-left: 60px; 
+  position: relative;
+  left: -140px;
+}
+
+.concept-text h1 {
+  padding-top: 100px; 
+}
+
+.concept-text p {
+  padding-top: 50px; 
+  line-height: 2.4em;
+  letter-spacing: 1.1px;
+  font-size: 14px;
+}
+
+/* Product */
+section {
+  padding: 50px 0 100px;
+}
+
+.product-text {
+  text-align: center;
+  position: relative;
+  top: -70px;
+  line-height: 2.4em;
+  letter-spacing: 1.1px;
+}
+
+section h2 {
+  font-size: 16px;
+  font-family: "M PLUS Rounded 1c";
+  font-weight: 500;
+  padding: 20px 0;
+  position: relative;
+}
+
+section h2::before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  border-top: 1px solid #333;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 2.5em;
+}
+
+.product-text p {
+  font-size: 16px;
+  font-family: "Hiragino Kaku Gothic Pro";
+  line-height: 1.8em;
+  letter-spacing: 1.1px;  
+  margin-bottom: -50px;
+}
+
+.product-wrapper {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.product-list {
+  display: flex;
+  margin-top: 20px;
+  gap: 70px;
+}
+
+.product-list:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.product-list > img {
+  width: 610px;
+}
+
+.product-contents {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.product-name {
+  font-size: 28px;
+  font-family: "Hiragino Mincho ProN";
+  color: #603813;
+  padding-bottom: 34px;
+}
+
+.product-contents p {
+  font-size: 16px;
+  font-family: "Hiragino Kaku Gothic Pro";
+  line-height: 1.8em;
+  letter-spacing: 1.1px;  
+}
+
+.product-contents .link {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.product-contents .watch {
+  width: 140px;
+  height: 42px;
+  border: 1px solid #603813;
+  background-color: #603813;
+}
+
+.product-contents .buy {
+  width: 140px;
+  height: 42px;
+  border: 1px solid #030303;
+  background-color: #d62418;
+}
+
+.link a {
+  color: #fff;
+  font-size: 14px;
+  line-height: 42px;
+  display: block;
+  position: relative;
+}
+
+.link a::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: 1em;
+  width: 0.4em;
+  height: 0.4em;
+  margin-top: -0.22em;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+}
+
+.watch:hover,
+.buy:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+/* infomation */
+.infomation {
+  text-align: center;
+  background: #ebe2cf;
+}
+
+.infomation h1 {
+  position: relative;
+  top: -70px;
+}
+
+.infomation-list {
+  width: 720px;
+  height: 300px;
+  display: block;
+  margin: -70px auto 10px;
+  border-top: 3px solid #5f3814;
+  border-bottom: 3px solid #5f3814;
+  padding: 10px 0;
+} 
+
+.more {
+  width: 250px;
+  line-height: 40px;
+  font-size: 16px;
+  background-color: #5f3814;
+  border: 1px solid #5f3814;
+  margin: 20px auto 0;
+}
+
+.more a {
+  color: #FFF;
+  display: block;
+  position: relative;
+}
+
+.more a::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: 1em;
+  width: 0.4em;
+  height: 0.4em;
+  margin-top: -0.22em;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+}
+
+.more:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+/* SNS */
+.sns > h1 {
+  text-align: center;
+}
+
+.img-list {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.sns-link {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px auto 0;
+  height: 48px;
+}
+
+.fb {
+  width: 210px;
+  line-height: 36px;
+  background-color: #61759a;
+  border: 1px solid #61759a;
+  text-align: center;
+}
+
+.insta {
+  width: 210px;
+  line-height: 36px;
+  background-color: #d62418;
+  border: 1px solid #d62418;
+  text-align: center;
+}
+
+.fa-facebook-square,
+.fa-instagram {
+  font-size: 24px;
+  color: #fff;
+  position: relative;
+  top: 8px;
+  left: -10px;
+}
+
+/* Access Map */
+.access {
+  background-color: #ebe2cf;
+}
+
+.access h1 {
+  text-align: center;
+}
+
+.access > h2 {
+  font-family: "M PLUS Rounded 1c";
+  font-weight: 500;
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  height: 420px;
+  padding: 10px 0 40px;
+}
+
+.access-wrap {
+  max-width: 940px;
+  display: inline;
+  margin: 0 center;
+}
+
+.access-link {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.access-link ul {
+  display: flex;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.access-link li {
+  width: 180px;
+  height: 50px;
+  border: 1px solid #603813;
+  background-color: #603813;
+  text-align: center;
+  cursor: pointer;
+}
+
+.access-link a {
+  color: #fff;
+  line-height: 50px;
+  display: block;
+  position: relative;
+}
+
+.access-link a::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: 1em;
+  width: 0.4em;
+  height: 0.4em;
+  margin-top: -0.22em;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+}
+
+.access-link li:hover {
+  opacity: 0.6;
+}
+
+.access-link h3 {
+  font-size: 22px;
+  color: #d62418;
+}
+
+.access-wrap p {
+  padding-top: 10px;
+}
+
+.traffic {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.traffic h4 {
+  color: #603813;
+}
+
+.traffic div {
+  flex-basis: 470px;
+}
+
+/* slide */
+.slide img {
+  width: 100%;
+}
+
+/* Cafe */
+.cafe > h1,
+.cafe > h2 {
+  text-align: center;
+}
+
+.cafe-img {
+  width: 700px;
+  margin-left: 20px;
+  position: absolute;
+  z-index: 100;
+}
+
+.cafe-text {
+  width: 380px;
+  height: 345px;
+  padding: 50px 90px;
+  background-color: #ebe2cf;
+  line-height: 1.8rem;
+  position: relative;
+  top: 50px;
+  left: 670px;
+  z-index: -10;
+}
+
+.cafe-text h3 {
+  font-size: 28px;
+  color: #d62418;
+}
+
+.cafe-text p {
+  padding: 30px 0;
+}
+
+.cafe-text dl {
+  color: #603813;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cafe-text dt {
+  width: 25%;
+}
+
+.cafe-text dd {
+  width: 75%;
+}
+
+/* footer */
+footer {
+  background-color: #d62418;
+  text-align: center;
+  padding: 40px 0;
+  color: #fff;
+  background-image: url("../img/footer_bg01.png");
+  background-repeat: no-repeat;
+  background-position: left 100px bottom 0%;
+}
+
+footer h2 {
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+footer h3 {
+  font-size: 18px;
+}
+
+.fa-phone-alt {
+  position: relative;
+  right:10px;
+}
+
+footer h4 {
+  font-size: 18px;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+footer ul {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+}
+
+footer li a {
+  margin-top: 5px;
+  display: block;
+  width: 340px;
+  height: 77px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  line-height: 48px;
+  position: relative;
+}
+
+footer li a::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: 2em;
+  width: 0.8em;
+  height: 0.8em;
+  margin-top: -0.44em;
+  border-top: 1px solid #d62418;
+  border-right: 1px solid #d62418;
+  transform: rotate(45deg);
+}
+
+footer ul .fa-envelope,
+footer ul .fa-shopping-cart {
+  font-size: 30px;
+  color: #d62418;
+  position: relative;
+  top: 0.65em;
+  left: -0.5em;
+}
+
+/* copyright */
+.copyright {
+  height: 58px;
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.copyright p {
+  font-size: 12px;
+}
+
+.copyright a {
+  color: #333;
+  font-size: 14px;
+}
